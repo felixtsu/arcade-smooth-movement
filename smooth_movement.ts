@@ -14,7 +14,7 @@ namespace smooth_movement {
 
     //% block
     //% speed.defl=50
-     //% blockid=smooth_movement_random_move_sprite block="以速度 %speed 随机移动 %sprite=variables_get(mySprite) "
+     //% blockid=smooth_movement_random_move_sprite block="以速度 $speed 随机移动 %sprite=variables_get(mySprite) "
     export function randomMovement(sprite:Sprite,speed:number=50) {
         sprite_movement.randomlyMoveSprite(sprite, speed)
         
