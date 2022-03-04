@@ -4,7 +4,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "pxt-turn": "github:felixtsu/pxt-turn#v0.1.4"
+        "pxt-turn": "github:felixtsu/pxt-turn#v0.1.4",
+        "arcade-sprite-movement": "github:felixtsu/arcade-sprite-movement#v0.0.2"
     },
     "files": [
         "main.blocks",
@@ -17,11 +18,11 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.8.20",
+        "target": "1.8.22",
         "targetId": "arcade"
     },
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
