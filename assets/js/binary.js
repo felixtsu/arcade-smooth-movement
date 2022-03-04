@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.22/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.2","target":"arcade","targetVersion":"1.8.22","repo":"felixtsu/arcade-smooth-movement"}
-// total=1263163 new=6.77% cached=87.87% other=5.36%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.22/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.3","target":"arcade","targetVersion":"1.8.22","repo":"felixtsu/arcade-smooth-movement"}
+// total=1263189 new=6.77% cached=87.87% other=5.36%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -405,7 +405,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P54622(s) {
+function _main___P54906(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -800,13 +800,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P54622.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-sprite-movement/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P54622.continuations = [  ]
+_main___P54906.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-sprite-movement/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P54906.continuations = [  ]
 
-function _main___P54622_mk(s) {
+function _main___P54906_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P54622, depth: s.depth + 1,
+        parent: s, fn: _main___P54906, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1106,14 +1106,14 @@ switch (step) {
   case 0:
 
     s.movingSprite___43234 = undefined;
-    s.unnamed724___U1 = undefined;
-    s.unnamed725___U2 = undefined;
+    s.unnamed996___U1 = undefined;
+    s.unnamed997___U2 = undefined;
     s.sprite___43236 = undefined;
     s.loc___43240 = undefined;
     s.candidateList___43243 = undefined;
     s.direction___43246 = undefined;
-    s.unnamed726___U7 = undefined;
-    s.unnamed727___U8 = undefined;
+    s.unnamed998___U7 = undefined;
+    s.unnamed999___U8 = undefined;
     s.deltaX___43258 = undefined;
     s.deltaY___43264 = undefined;
     s.interval___43270 = undefined;
@@ -1121,21 +1121,21 @@ switch (step) {
     s.moving___43292 = undefined;
     s.movingDirection___43297 = undefined;
     s.direction___43301 = undefined;
-    s.unnamed728___U16 = undefined;
-    s.unnamed729___U17 = undefined;
+    s.unnamed1000___U16 = undefined;
+    s.unnamed1001___U17 = undefined;
     s.needToRemoveDirection___43322 = undefined;
-    s.unnamed730___U19 = undefined;
-    s.unnamed731___U20 = undefined;
+    s.unnamed1002___U19 = undefined;
+    s.unnamed1003___U20 = undefined;
     s.movingSprite___43234 = (undefined);
-    s.unnamed724___U1 = (globals._managingSprites___43220);
-    s.unnamed725___U2 = (0);
+    s.unnamed996___U1 = (globals._managingSprites___43220);
+    s.unnamed997___U2 = (0);
   case 1:
-    s.tmp_0 = r0 = s.unnamed725___U2;
-    r0 = pxsim_Array__length(s.unnamed724___U1);
+    s.tmp_0 = r0 = s.unnamed997___U2;
+    r0 = pxsim_Array__length(s.unnamed996___U1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 22; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed724___U1, s.unnamed725___U2);
+    r0 = pxsim_Array__getAt(s.unnamed996___U1, s.unnamed997___U2);
     s.movingSprite___43234 = (r0);
     s.tmp_2 = if_sprite_1_mk(s);
     s.tmp_2.arg0 = s.movingSprite___43234;
@@ -1159,15 +1159,15 @@ switch (step) {
     r0 = pxsim_Array__mk();
     s.candidateList___43243 = (r0);
     s.direction___43246 = (undefined);
-    s.unnamed726___U7 = (globals.FOUR_DIRECTION___43230);
-    s.unnamed727___U8 = (0);
+    s.unnamed998___U7 = (globals.FOUR_DIRECTION___43230);
+    s.unnamed999___U8 = (0);
   case 2:
-    s.tmp_0 = r0 = s.unnamed727___U8;
-    r0 = pxsim_Array__length(s.unnamed726___U7);
+    s.tmp_0 = r0 = s.unnamed999___U8;
+    r0 = pxsim_Array__length(s.unnamed998___U7);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 5; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed726___U7, s.unnamed727___U8);
+    r0 = pxsim_Array__getAt(s.unnamed998___U7, s.unnamed999___U8);
     s.direction___43246 = (r0);
     s.tmp_5 = Sprite_isHittingTile__P38782_mk(s);
     s.tmp_5.arg0 = s.sprite___43236;
@@ -1185,11 +1185,11 @@ switch (step) {
     r0 = pxsim_Array__push(s.candidateList___43243, s.direction___43246);
   case 3:
   case 4:
-    r0 = (s.unnamed727___U8 + 1);
-    s.unnamed727___U8 = (r0);
+    r0 = (s.unnamed999___U8 + 1);
+    s.unnamed999___U8 = (r0);
     { step = 2; continue; }
   case 5:
-    s.unnamed726___U7 = (undefined);
+    s.unnamed998___U7 = (undefined);
     s.tmp_1 = tiles_Location_x__P39003_mk(s);
     s.tmp_1.arg0 = s.loc___43240;
     s.callLocIdx = 57; s.pc = 26; return s.tmp_1;
@@ -1279,15 +1279,15 @@ switch (step) {
     r0 = s.retval;
     s.movingDirection___43297 = (r0);
     s.direction___43301 = (undefined);
-    s.unnamed728___U16 = (s.candidateList___43243);
-    s.unnamed729___U17 = (0);
+    s.unnamed1000___U16 = (s.candidateList___43243);
+    s.unnamed1001___U17 = (0);
   case 10:
-    s.tmp_0 = r0 = s.unnamed729___U17;
-    r0 = pxsim_Array__length(s.unnamed728___U16);
+    s.tmp_0 = r0 = s.unnamed1001___U17;
+    r0 = pxsim_Array__length(s.unnamed1000___U16);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 17; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed728___U16, s.unnamed729___U17);
+    r0 = pxsim_Array__getAt(s.unnamed1000___U16, s.unnamed1001___U17);
     s.direction___43301 = (r0);
     s.tmp_2 = r0 = s.moving___43292;
     r0 = pxsim_numops_toBool(s.tmp_2);
@@ -1328,28 +1328,28 @@ switch (step) {
     r0 = pxsim_Array__push(s.removedCandidate___43281, s.direction___43301);
   case 15:
   case 16:
-    r0 = (s.unnamed729___U17 + 1);
-    s.unnamed729___U17 = (r0);
+    r0 = (s.unnamed1001___U17 + 1);
+    s.unnamed1001___U17 = (r0);
     { step = 10; continue; }
   case 17:
-    s.unnamed728___U16 = (undefined);
+    s.unnamed1000___U16 = (undefined);
     s.needToRemoveDirection___43322 = (undefined);
-    s.unnamed730___U19 = (s.removedCandidate___43281);
-    s.unnamed731___U20 = (0);
+    s.unnamed1002___U19 = (s.removedCandidate___43281);
+    s.unnamed1003___U20 = (0);
   case 18:
-    s.tmp_0 = r0 = s.unnamed731___U20;
-    r0 = pxsim_Array__length(s.unnamed730___U19);
+    s.tmp_0 = r0 = s.unnamed1003___U20;
+    r0 = pxsim_Array__length(s.unnamed1002___U19);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 19; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed730___U19, s.unnamed731___U20);
+    r0 = pxsim_Array__getAt(s.unnamed1002___U19, s.unnamed1003___U20);
     s.needToRemoveDirection___43322 = (r0);
     r0 = pxsim_Array_.removeElement(s.candidateList___43243, s.needToRemoveDirection___43322);
-    r0 = (s.unnamed731___U20 + 1);
-    s.unnamed731___U20 = (r0);
+    r0 = (s.unnamed1003___U20 + 1);
+    s.unnamed1003___U20 = (r0);
     { step = 18; continue; }
   case 19:
-    s.unnamed730___U19 = (undefined);
+    s.unnamed1002___U19 = (undefined);
     s.tmp_0 = sprite_movement_alignToTileCenter__P43225_mk(s);
     s.tmp_0.arg0 = s.sprite___43236;
     s.callLocIdx = 68; s.pc = 37; return s.tmp_0;
@@ -1368,11 +1368,11 @@ switch (step) {
     r0 = s.retval;
   case 20:
   case 21:
-    r0 = (s.unnamed725___U2 + 1);
-    s.unnamed725___U2 = (r0);
+    r0 = (s.unnamed997___U2 + 1);
+    s.unnamed997___U2 = (r0);
     { step = 1; continue; }
   case 22:
-    s.unnamed724___U1 = (undefined);
+    s.unnamed996___U1 = (undefined);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
@@ -1392,14 +1392,14 @@ function sprite_movement_inline__P43232_mk(s) {
   tmp_5: undefined,
   tmp_6: undefined,
   movingSprite___43234: undefined,
-  unnamed724___U1: undefined,
-  unnamed725___U2: undefined,
+  unnamed996___U1: undefined,
+  unnamed997___U2: undefined,
   sprite___43236: undefined,
   loc___43240: undefined,
   candidateList___43243: undefined,
   direction___43246: undefined,
-  unnamed726___U7: undefined,
-  unnamed727___U8: undefined,
+  unnamed998___U7: undefined,
+  unnamed999___U8: undefined,
   deltaX___43258: undefined,
   deltaY___43264: undefined,
   interval___43270: undefined,
@@ -1407,11 +1407,11 @@ function sprite_movement_inline__P43232_mk(s) {
   moving___43292: undefined,
   movingDirection___43297: undefined,
   direction___43301: undefined,
-  unnamed728___U16: undefined,
-  unnamed729___U17: undefined,
+  unnamed1000___U16: undefined,
+  unnamed1001___U17: undefined,
   needToRemoveDirection___43322: undefined,
-  unnamed730___U19: undefined,
-  unnamed731___U20: undefined,
+  unnamed1002___U19: undefined,
+  unnamed1003___U20: undefined,
 } }
 
 
@@ -42892,5 +42892,5 @@ const sprites_BaseSpriteSayRenderer__C38622_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, [])
 
-return _main___P54622
+return _main___P54906
 })
